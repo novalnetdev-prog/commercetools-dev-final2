@@ -21,11 +21,13 @@
     "sass": "1.88.0",
     "ts-jest": "^29.3.2",
     "typescript": "5.8.3",
-    "vite": "6.3.5",
+    "vite": "6.4.4",
     "vite-plugin-css-injected-by-js": "3.5.2"
   },
   "overrides": {
     "path-to-regexp": "3.3.0",
-    "esbuild": "^0.24.0"
+    "esbuild": "^0.24.0",
+    "compression": "1.8.2",
+    "minimatch": "3.1.5"
   }
 }
