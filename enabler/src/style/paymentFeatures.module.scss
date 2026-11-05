@@ -114,3 +114,47 @@
   margin-inline-end: 0.5rem;
 }
 .error { margin: 0.25rem 0; color: #b42318; font-size: 0.875rem; }
+
+@supports (-webkit-touch-callout: none) {
+  @media screen and (max-width: 430px) {
+
+    .row {
+      min-width: 0;
+    }
+
+    .row > .label {
+      flex: 1 1 0%;
+      width: auto;
+      max-width: none;
+      min-width: 0;
+    }
+
+    .row .outer,
+    .row .inner {
+      width: 100%;
+      min-width: 0;
+    }
+
+    .row .radio {
+      flex-shrink: 0;
+    }
+
+    .row .inner > span {
+      flex: 1 1 0%;
+      min-width: 0;
+      white-space: normal;
+    }
+
+    .row .text,
+    .row .name {
+      min-width: 0;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+
+    .row > .delete {
+      flex: 0 0 1.5rem;
+      margin-left: auto;
+    }
+  }
+}
